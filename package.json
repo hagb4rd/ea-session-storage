@@ -1,0 +1,37 @@
+{
+  "name": "ea-session-storage",
+  "version": "1.0.1",
+  "description": "express server route providing a session based remoteStorage (like remoteStorage) for key json pair vaulues.",
+  "main": "src/storage.js",
+  "bin": {
+    "storage": ".bin/cli.js"
+  },
+  "scripts": {
+    "start": "node .bin/cli.js",
+    "debug": "node .bin/cli.js --inspect-brk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hagb4rd/ea-session-storage.git"
+  },
+  "keywords": [
+    "server",
+    "express",
+    "storage",
+    "session",
+    "sqlite",
+    "endpoint",
+    "route"
+  ],
+  "author": "hagb4rd@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "connect-sqlite3": "^0.9.11",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "form-data": "^2.3.2",
+    "node-fetch": "^2.2.0",
+    "opn": "^5.4.0"
+  }
+}
